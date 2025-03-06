@@ -8,30 +8,7 @@ namespace WinFormsApp1
             InitializeComponent();
         }
         calculator kalkul = new calculator();
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button_8_Click(object sender, EventArgs e)
         {
@@ -64,6 +41,51 @@ namespace WinFormsApp1
         }
 
         private void button_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_div_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_equal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_4_Click(object sender, EventArgs e)
         {
 
         }

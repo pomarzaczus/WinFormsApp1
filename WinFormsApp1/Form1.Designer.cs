@@ -54,7 +54,7 @@
             button_equal.TabIndex = 0;
             button_equal.Text = "=";
             button_equal.UseVisualStyleBackColor = true;
-            button_equal.Click += button1_Click;
+            button_equal.Click += button_equal_Click;
             // 
             // button_7
             // 
@@ -65,7 +65,7 @@
             button_7.TabIndex = 1;
             button_7.Text = "button7";
             button_7.UseVisualStyleBackColor = false;
-            button_7.Click += button2_Click;
+            button_7.Click += button_7_Click;
             // 
             // button_6
             // 
@@ -85,7 +85,7 @@
             button_9.TabIndex = 3;
             button_9.Text = "9";
             button_9.UseVisualStyleBackColor = true;
-            button_9.Click += button4_Click;
+            button_9.Click += button_9_Click;
             // 
             // button_plus
             // 
@@ -145,6 +145,7 @@
             button_5.TabIndex = 9;
             button_5.Text = "5";
             button_5.UseVisualStyleBackColor = true;
+            button_5.Click += button_5_Click;
             // 
             // button_2
             // 
@@ -154,6 +155,7 @@
             button_2.TabIndex = 10;
             button_2.Text = "2";
             button_2.UseVisualStyleBackColor = true;
+            button_2.Click += button_2_Click;
             // 
             // button_0
             // 
@@ -163,6 +165,7 @@
             button_0.TabIndex = 11;
             button_0.Text = "0";
             button_0.UseVisualStyleBackColor = true;
+            button_0.Click += button_0_Click;
             // 
             // button_div
             // 
@@ -172,6 +175,7 @@
             button_div.TabIndex = 12;
             button_div.Text = "/";
             button_div.UseVisualStyleBackColor = true;
+            button_div.Click += button_div_Click;
             // 
             // button_1
             // 
@@ -191,7 +195,7 @@
             button_4.TabIndex = 14;
             button_4.Text = "4";
             button_4.UseVisualStyleBackColor = true;
-            button_4.Click += button15_Click;
+            button_4.Click += button_4_Click;
             // 
             // textBox1
             // 
