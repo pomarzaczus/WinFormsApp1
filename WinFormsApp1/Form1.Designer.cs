@@ -44,6 +44,7 @@
             button_1 = new Button();
             button_4 = new Button();
             textBox1 = new TextBox();
+            CE = new Button();
             SuspendLayout();
             // 
             // button_equal
@@ -205,12 +206,23 @@
             textBox1.TabIndex = 15;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
+            // CE
+            // 
+            CE.Location = new Point(425, 165);
+            CE.Name = "CE";
+            CE.Size = new Size(75, 23);
+            CE.TabIndex = 16;
+            CE.Text = "CE";
+            CE.UseVisualStyleBackColor = true;
+            CE.Click += CE_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaptionText;
             ClientSize = new Size(800, 450);
+            Controls.Add(CE);
             Controls.Add(textBox1);
             Controls.Add(button_4);
             Controls.Add(button_1);
@@ -251,5 +263,6 @@
         private Button button_1;
         private Button button_4;
         private TextBox textBox1;
+        private Button CE;
     }
 }

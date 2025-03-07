@@ -1,6 +1,7 @@
 using kalulator;
 namespace WinFormsApp1
 {
+    using kalulator;
     public partial class Form1 : Form
     {
         public Form1()
@@ -11,18 +12,21 @@ namespace WinFormsApp1
         calculator kalk = new calculator();
         int firstnumber = 0, seconnumber = 0;
         int dzialanie = 0;
+
         private void button_8_Click(object sender, EventArgs e)
         {
 
-            if (dzialanie == 0) {
+            if (dzialanie == 0)
+            {
                 firstnumber = firstnumber * 10 + 8;
                 textBox1.AppendText(8.ToString());
             }
-            else {
+            else
+            {
                 seconnumber = seconnumber * 10 + 8;
                 textBox1.AppendText(8.ToString());
             }
-            
+
 
         }
 
@@ -37,7 +41,7 @@ namespace WinFormsApp1
             {
                 seconnumber = seconnumber * 10 + 1;
                 textBox1.AppendText(1.ToString());
-                
+
             }
         }
 
@@ -48,7 +52,7 @@ namespace WinFormsApp1
                 dzialanie = 1;
                 textBox1.AppendText("+");
             }
-         
+
         }
 
         private void button_minus_Click(object sender, EventArgs e)
@@ -58,7 +62,7 @@ namespace WinFormsApp1
                 dzialanie = 2;
                 textBox1.AppendText("-");
             }
- 
+
         }
 
         private void button_multi_Click(object sender, EventArgs e)
@@ -68,7 +72,7 @@ namespace WinFormsApp1
                 dzialanie = 3;
                 textBox1.AppendText("*");
             }
-  
+
         }
 
         private void button_3_Click(object sender, EventArgs e)
@@ -165,13 +169,16 @@ namespace WinFormsApp1
             switch (dzialanie)
             {
                 case 1:
-                   kalk.
+                    textBox1.AppendText("=" + kalk.dod(firstnumber, seconnumber).ToString());
                     break;
                 case 2:
+                    textBox1.AppendText("=" + kalk.odj(firstnumber, seconnumber).ToString());
                     break;
                 case 3:
+                    textBox1.AppendText("=" + kalk.mno(firstnumber, seconnumber).ToString());
                     break;
                 case 4:
+                    textBox1.AppendText("=" + kalk.dzie(firstnumber, seconnumber).ToString());
                     break;
                 default:
 
@@ -223,6 +230,14 @@ namespace WinFormsApp1
                 textBox1.AppendText(4.ToString());
 
             }
+        }
+
+        private void CE_Click(object sender, EventArgs e)
+        {
+            firstnumber = 0;
+            seconnumber = 0;
+            dzialanie = 0;
+            textBox1.Text = "";
         }
     }
 }
